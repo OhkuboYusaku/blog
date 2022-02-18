@@ -73,7 +73,6 @@ for (i in 1:N.sim){
 hist(result[,4] - result[,5], xlab="AIC(M1)-AIC(M2)")
   abline(v=0, col=2)
 hist(result[,4] - result[,6], xlab="AIC(M1)-AIC(M3)")
-summary(result)
   abline(v=0, col=2)
 
 summary(result[,4] - result[,5])
@@ -82,7 +81,7 @@ summary(result[,4] - result[,6])
 tmp1<- (result[,4] - result[,5])
 tmp2<- (result[,4] - result[,6])
 
-# smaller model is chosen in almost 60& of times
+# smaller model is chosen in almost 60% of times
 length(tmp1[tmp1<0])
 length(tmp2[tmp2<0]) 
 ```
