@@ -117,18 +117,28 @@ N<- 200
 D<- 2
 
 prop<- c(0.5, 0.5, -0.5, 0.1, -0.1, -0.1, 0.0, 0.0, -0.1, 0.1, -0.1, 0.1, 0.1, -0.1)
-#beta_Z<- c(0.2, -0.05, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0, 0, -1, 1, -1, 1)
-beta_Z<- c(1, -1, 1, -1, 1, -0, 0, -0, 0, 0, -0, 0, -0, 0)/100
+beta_Z<- c(1, -1, 1, -1, 1, -0, 0, -0, 0, 0, -0, 0, -0, 0)
 p<- length(prop)
 
 beta_X<- 1.5
 intercept_Y<- -2
 sigma_Y<- 1
 
-Z <- as.matrix(array(dim=c(N,p)))
-  for(i in 1:p){
-    Z[,i] <- rnorm(N, 0, 5)
-  }
+Z <- as.matrix(array(dim=c(N,p)))  Z[,1] <- rnorm(N, 1, 5)
+  Z[,2] <- rnorm(N, 5, 5)
+  Z[,3] <- rnorm(N, 5, 5)
+  Z[,4] <- rnorm(N, 5, 5)
+  Z[,5] <- rnorm(N, 5, 5)
+  Z[,6] <- rnorm(N, 5, 5)
+  Z[,7] <- rnorm(N, 5, 5)
+  Z[,8] <- rnorm(N, 5, 5)
+  Z[,9] <- rnorm(N, 5, 5)
+  Z[,10] <- rnorm(N, -5, 5)
+  Z[,11] <- rnorm(N, -5, 5)
+  Z[,12] <- rnorm(N, -5, 5)
+  Z[,13] <- rnorm(N, -5, 5)
+  Z[,14] <- rnorm(N, -5, 5)
+  
 prop_t<- plogis(Z %*% prop) 
 
 result <- t(sapply(1:N_sim, function(seed) {
