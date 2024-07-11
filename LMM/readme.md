@@ -49,5 +49,7 @@ GEE: {geepack}
 
 # ・参考文献
 Lichstein, J. W., Simons, T. R., Shriner, S. A., & Franzreb, K. E. (2002). Spatial autocorrelation and autoregressive models in ecology. Ecological monographs, 72(3), 445-463.
+
 Nakagawa, S., Poulin, R., Mengersen, K., Reinhold, K., Engqvist, L., Lagisz, M., & Senior, A. M. (2015). Meta-analysis of variation: ecological and evolutionary applications and beyond. Methods in Ecology and Evolution, 6(2), 143–152. https://doi.org/10.1111/2041-210X.12309
+
 Ohkubo, Y., Kutsukake, N., Koizumi, I. (2023). A novel phylogenetic comparative method for evaluating the strength of branch-specific directional selection, Evolution, Volume 77, Issue 1, Pages 63–82, https://doi.org/10.1093/evolut/qpac015
