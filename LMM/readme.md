@@ -48,7 +48,9 @@ GEE: {geepack}
 * 複雑な共分散構造がある場合のベイズ推定をできるパッケージとして{MCMCpack}が有名だが、個人的には推奨しない。{lme4}と似た記法で推定を実行できる点は便利だが、ギブスサンプリングを行う都合上ランダム分散の事前分布にガンマ分布やウィシャート分布が使われており、パラメータの選択によって劇的に推定結果が変化してしまう恐れがある。
 
 # ・文献ガイド
+https://162348.github.io/posts/2024/Computation/brms.html
 
+{brms}をもちいたベイズ推定に関して詳しい情報が記載されている。ランダム効果に投入する変数と説明変数との相関が引き起こす問題についても丁寧に説明されている。
 
 # ・参考文献
 Lichstein, J. W., Simons, T. R., Shriner, S. A., & Franzreb, K. E. (2002). Spatial autocorrelation and autoregressive models in ecology. Ecological monographs, 72(3), 445-463.
